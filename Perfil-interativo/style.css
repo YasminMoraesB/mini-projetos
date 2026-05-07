@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E6F2F0;
+}
+.container{
+    background-color:#f5f7fa;
+    width: 30vw;
+    min-height: 40vw;
+    margin-top: 60px;
+    border-radius:50px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    color: rgb(49, 49, 49);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+
+}
+.container-imagens{
+    position: relative;
+    width: 100%;
+    height: 45%;
+}
+.background {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:30vw;
+    height: auto;
+    border-radius:10px;
+}
+
+.icon{
+   border-radius: 100%;
+   z-index: 10;
+   width: 40%;
+   top: 100px;
+   left: 40px;
+   position: absolute;
+   border: 4px solid #7c3aed;
+   box-shadow: 0 0 25px #7c3aed88;
+   
+}
+h2{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1%;
+}
+
+.About {
+    margin-top: 15px;
+    padding: 10px;
+    width: auto;
+    transition: 0.3s;
+}
+.About:hover{
+    transform: translateY(-3px);
+}
+.follows{
+    display: flex;
+    justify-content:center;
+    padding: 10px;
+    font-weight: bold;
+    gap: 15px;
+    margin-top: 1%;
+}
+button{
+border-radius: 999px;
+padding: 12px 24px;
+background:#8b5cf6;
+transition: 0.3s;
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+cursor: pointer;
+margin-top: 5%;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+
+
+
+
+@media (min-width: 400px) {
+  .container{
+    width: 500px;
+    height: 600px;
+  }
+  .background {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+}
+
+@media (min-width: 768px){
+  .container{
+    width: 500px;
+    height: 700px;
+  }
+  .background {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+}
