@@ -38,5 +38,12 @@ Este projeto foi desenvolvido para praticar:
 - Efeito de brilho (box-shadow) na foto do perfil
 
 ---
+## Projeto
+<p align="center">
+  <img src="/Perfil-interativo/perfilInterativo.png" width="800"/>
+</p>
+<p align="center">
+  <img src="/Perfil-interativo/follow.png" width="800"/>
+</p>
 
 Projeto desenvolvido para aprendizado de front-end. 💜
