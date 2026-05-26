@@ -20,3 +20,11 @@ Um contador de cliques simples, com intenção de praticar **addEventListener** 
 - `style.css` - Estilos e cores
 - `script.js` - Lógica do contador
 - `background.png` - Imagem de fundo
+
+## Projeto
+<p align="center">
+  <img src="/contador-de-clique/contadorClique.png" width="800"/>
+</p>
+<p align="center">
+  <img src="/contador-de-clique/contadorClique2.png" width="800"/>
+</p>
