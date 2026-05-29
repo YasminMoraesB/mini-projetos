@@ -8,43 +8,96 @@ body {
     background-color: #F0F2F5;
     font-family: "Cherry Bomb One", Arial, Helvetica, sans-serif;
     color: #333333;
-    display: flex;           
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center; 
-    min-height: 90vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 10px;
-    text-align: center;  
-    gap: 30px;
+    background-image: url('/Gerador-aleatorio/background.png');
 }
-h1{
+
+h1 {
     font-size: 50px;
-    margin-left: 50%;
-    align-items: center; 
+    text-align: center;
 }
-.img-div{  
-    border: 2px solid #D0E7FF;
-    box-shadow: 0 8px 30px rgba(208, 231, 255, 0.5);
+
+.container {  
+    border: 4px solid #FF8C42;
     width: 500px;
     height: 500px;
-    background-color: #D0E7FF;
-    border-radius: 25px;
+    background-color: #FFF8F0;
+    border-radius: 30px;
     position: relative;
+    margin-top: 180px;
+    padding: 10px;
+    box-shadow: 0 8px 20px rgba(255, 140, 66, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 20px;
 }
-
-button {
+.titulo {
+    background-color: #F39C4B;
+    text-align: center;
+    font-size: 36px;  
+    padding: 7px 0;
+    border-radius: 15px; 
+    width: 95%;
     position: absolute;
-    bottom: 140px; 
-    left: 46%;
-    transform: translateX(-50%); 
-    width: 400px;
-    height: 60px;
-    border-radius: 20px;
+    top: 10px;
+    color: white;
+    font-weight: bold;
+}
+#button-cat {
+    width: 380px;
+    height: 70px;
+    border-radius: 40px;
     cursor: pointer;
     background-color: #FF8C42;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 130%;
+    font-family: 'Comic Neue', 'Comic Sans MS', 'Arial', sans-serif;
+    font-size: 135%;
+    font-weight: bold;
     color: white;
     border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(255, 140, 66, 0.4);
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
 
+#button-cat:hover {
+    transform: scale(1.03);
+    background-color: #FF9A55;
+    box-shadow: 0 10px 25px rgba(255, 140, 66, 0.6);
+}
+
+#button-cat:active {
+    transform: scale(0.96);
+}
+
+#button-cat::before {
+    content: "";
+    margin-right: 12px;
+    display: inline-block;
+    transition: all 0.2s;
+}
+
+#button-cat::after {
+    content: "";
+    margin-left: 12px;
+    display: inline-block;
+    transition: all 0.2s;
+}
+
+#button-cat:hover::before {
+    transform: scale(1.2);
+}
+
+#button-cat:hover::after {
+    transform: scale(1.2);
+}
+.container-img{
+    width: 300px;
+    height: 310px;
+    padding: 20px;
+    border-radius: 30px;
 }
