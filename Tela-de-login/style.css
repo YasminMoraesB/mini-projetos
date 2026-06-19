@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    height: 700px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 0; 
+}
+
+#primeira-coluna{
+    background-color: #F0F0D8;
+    width: 50%;  
+    height: 100vh; 
+    padding: 20px;
+    text-align: center;
+}
+
+#segunda-coluna{
+    background-color: #789048;
+    width: 50%; 
+    height: 100vh; 
+    padding: 20px;
+    text-align: center;
+}
+.conteudo1{
+    text-align: center;
+    color:#607848;
+    font-family: "Baloo 2", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.conteudo1 h1{
+    font-family: "Fredoka", sans-serif;
+    font-weight: 500px;
+    font-size:60px;
+}
+.conteudo2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 100%;
+    font-family: "Fredoka", sans-serif;
+    color: #FFFFFF;
+    margin-top: 20%;
+}
+
+.campo {
+    width: 80%;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.campo p {
+    margin-bottom: 5px;
+    color: #FFFFFF;
+}
+
+.campo input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 24px;
+    font-size: 16px;
+    background-color: #F0F0D8;
+
+}
+
+#criar-conta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 40px;
+}
+
+#criar-conta a {
+    color: #fcfcfc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#criar-conta a:hover {
+    text-decoration: underline; 
+    color:#604848;
+    transition: 0.5s;
+}
+#botao-senha {
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    padding: 14px 50px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    width: 400px;
+}
+
+#botao-senha:hover {
+    background-color: #FFFFFF;
+    color: #4A7C59;
+    transform: scale(1.05);
+}
+.icons{
+    font-size: 15px;
+    color: white;
+    margin-right: 10px;
+    font-family: "Fredoka", sans-serif;
+}
+.icons img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: auto;
+}
+.icons img:hover{
+    color: white;
+    transform: scale(1.10);
+    transition: transform 0.3s ease;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
