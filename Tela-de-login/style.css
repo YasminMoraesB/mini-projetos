@@ -6,6 +6,13 @@
 img{
     height: 700px;
 }
+.erro{
+    color: #E9B949;
+    font-size: 14px;
+    margin-top: 5px;
+    min-height: 20px; 
+    display: block; 
+}
 .container{
     display: flex;
     justify-content: center;

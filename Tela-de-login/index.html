@@ -20,40 +20,45 @@
         </div>
         </div>
         
-        <div id="segunda-coluna">
+<div id="segunda-coluna">
+    <form id="form-cadastro"> 
         <div class="conteudo2">
-        <h1 id="coluna2">Crie uma conta</h1>
-        
-        <div id="criar-conta">
-            <p>Já tem uma conta? Clique para </p>
-            <strong><a href="#">entrar</a></strong> 
-        </div>
-        
-        <div class="campo" id="input-nome">
-            <p>Nome</p>
-            <input type="text" placeholder="Digite seu nome">
-        </div>
-        
-        <div class="campo">
-            <p>Email</p>
-            <input type="email">
-        </div>
-        
-        <div class="campo">
-            <p>Senha</p>
-            <input type="password" name="SENHA" id="input-senha">
-        </div>
-        
-        <button id="botao-senha">Criar conta</button>
-    </div> 
-            <div class="icons">
-                <p>Crie sua conta com:</p>
-                <img src="/Tela-de-login/icons8-facebook-48.png" alt="Facebook">
-                <img src="/Tela-de-login/icons8-google-logo-48.png" alt="Google">
-                <img src="/Tela-de-login/icons8-linkedin-48.png" alt="Linkedin">
+            <h1 id="coluna2">Crie uma conta</h1>
+            
+            <div id="criar-conta">
+                <p>Já tem uma conta? Clique para </p>
+                <strong><a href="#">entrar</a></strong> 
             </div>
+            
+            <div class="campo" id="input-nome">
+                <p>Nome</p>
+                <input type="text" id="nome" placeholder="Digite seu nome">
+                <div id="erro-nome" class="erro"></div>
+            </div>
+            
+            <div class="campo" id="input-email">
+                <p>Email</p>
+                <input type="email" id="email" placeholder="Digite seu email">
+                <div id="erro-email" class="erro"></div>
+            </div>
+
+            <div class="campo" id="input-senha">
+                <p>Senha</p>
+                <input type="password" id="senha" placeholder="Digite sua senha">
+                <div id="erro-senha" class="erro"></div>
+            </div>
+            
+            <button type="submit" id="botao-senha">Criar conta</button>
         </div>
-        </div>
+    </form> 
+    
+    <div class="icons">
+        <p>Crie sua conta com:</p>
+        <img src="/Tela-de-login/icons8-facebook-48.png" alt="Facebook">
+        <img src="/Tela-de-login/icons8-google-logo-48.png" alt="Google">
+        <img src="/Tela-de-login/icons8-linkedin-48.png" alt="Linkedin">
+    </div>
+</div>
     </body>
     <script src="script.js"></script>
     </html>
