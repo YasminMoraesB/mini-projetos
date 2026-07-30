@@ -4,9 +4,54 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #0F172A;
-    color:#CBD5E1;
+    min-height: 100vh;
     font-family: "Inter";
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color:  #F6F4FF;
+    color:#3D2C5A;
+    margin-top: 100px;
 }
+
+.accordion-content{
+    background-color: #F9A8D4;
+    width: 700px;
+    gap: 10px;
+    padding: 10px;
+    /* visibility: hidden; */
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+nav{
+    top: 0;
+    position: fixed;
+    background-color: #C8B6FF;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #5F5878;
+}
+nav img{
+    width: 100px;
+}
+.accordion-header{
+    background-color: #FFFFFF;
+    color: #3D2C5A;
+    font-family: "Inter";
+    font-size: 20px;
+    width: 700px;
+    height: 50px;
+    border-radius: 10px;
+    border: solid #E5DFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
