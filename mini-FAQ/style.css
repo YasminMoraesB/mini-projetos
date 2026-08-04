@@ -26,6 +26,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 10px;
+
 }
 nav{
     top: 0;
@@ -52,6 +53,18 @@ nav img{
     border-radius: 10px;
     border: solid #E5DFFF;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    }
+    .melhores-runas{
+       padding: 13px;
+    }
+    .arrow{
+        transition: 0.3s;
+    }
+    .arrow:hover{
+        background-color:#5F5878;
+        color: white;
+        border: #3D2C5A;
+        
     }
