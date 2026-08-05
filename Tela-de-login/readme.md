@@ -6,7 +6,6 @@ Uma tela de cadastro desenvolvida com **HTML, CSS e JavaScript**, inspirada na i
 
 ## 📸 Preview
 
-> Adicione aqui um print da aplicação.
 
 <p align="center">
   <img src="/Tela-de-login/print1.png" width="800"/>

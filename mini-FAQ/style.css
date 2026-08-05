@@ -15,8 +15,8 @@ body{
     padding-bottom: 20px;
 }
 
-.accordion-content{
-    background-color: #F9A8D4;
+.accordion-item{
+    background-color: #FDD9EE;
     width: 100%;
     max-width: 700px;
     padding: 12px;
@@ -45,33 +45,53 @@ nav img{
     width: 60px;
 }
 .accordion-header{
-    background-color: #FFFFFF;
+    background-color: #F9A8D4;
     color: #3D2C5A;
     font-family: "Inter";
     font-size: 16px;
     width: 100%;
     max-width: 700px;
     height: 50px;
-    border-radius: 10px;
-    border: solid #E5DFFF;
+    border: none;
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    line-height: 1.6;
+}
+.accordion-content{
+    background-color: #FFF7FC;
+    border-radius: 8px;
+    padding: 0 18px;
+    line-height: 1.6;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all .3s ease;
+}
+.accordion-content.active{
+    max-height: 100%;
+    opacity: 1;
+    transition: all .3s ease;
+    padding: 18px;
 }
 .melhores-runas{
    padding: 13px;
 }
 .arrow{
-    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
     padding: 2px;
+    transition: transform .3s ease;
 }
 .arrow.active{
     transform: rotate(180deg);
 }
 .arrow:hover{
-    background-color: #5F5878;
+    background-color: #e681b8;
     color: white;
     cursor: pointer;
+    transition: 0.3ms;
 }
 
 /* Responsividade */
