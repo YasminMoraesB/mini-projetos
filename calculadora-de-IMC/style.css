@@ -3,19 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: #F7F3EA;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: "Inter";
-    min-width: 100vh;
-    margin-top: 10%;
+    min-height: 100vh;
     color: #050200;
+    padding: 20px; 
 }
-main{
-    background-color: #ffff;
-    min-width: 100vh;
+
+main {
+    background-color: #fff;
+    width: 100%;
+    max-width: 500px;
     min-height: 50vh;
     display: flex;
     flex-direction: column;
@@ -24,35 +27,94 @@ main{
     align-items: center;
     color: #6B625B;
 }
-form{
-    margin-top: 10px;
+h1{
+        margin-top: 30px;
+}
+
+form {
+    width: 100%;
     padding: 10px;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-input{
+
+input {
     border: none;
     background-color: antiquewhite;
-    width: 400px;
+    width: 100%; 
+    max-width: 300px; 
     height: 50px;
     border-radius: 30px;
     padding: 20px;
+    display: flex; 
+    gap: 10%;
+    margin-left: 60px;
 }
-input[type=number]::-webkit-inner-spin-button{
-    appearance: none; 
-    }
 
-.inputs{
+input[type=number]::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.inputs {
     padding: 20px;
     gap: 50px;
 }
-button{
-    width: 400px;
+
+button {
+    width: 100%; 
+    max-width: 400px;  
     height: 50px;
     border-radius: 30px;
-    border: none;
+    font-size: 18px;
+    background: linear-gradient(to right, #DBAD6A 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.5s ease;
+    color: #333;
+    border: 2px solid #DBAD6A;
+    padding: 12px 30px;
     cursor: pointer;
-    background-color:#DBAD6A ;
-    font-family: "Inter";
+}
+
+button:hover {
+    background-position: left bottom;
+    color: white;
+}
+
+.informacoes-imc {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.resultado {
+    background-color: #f8fafc;
+    justify-content: center;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 2px dashed #CF995F;
+    border-radius: 10px;
+    width: 100%; 
+}
+#texto-com-base-imc{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+/* Responsividade */
+@media (max-width: 400px) {
+    main {
+        padding: 10px 5px;
+    }
+
+    button,
+    input {
+        max-width: 100%;
+    }
 }
